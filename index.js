@@ -1,4 +1,4 @@
 function teste() {
-  alert("Aqui é o ambiente dev.");
+  alert("Botão deve funcionar só no ambiente dev!");
   return;
 }
