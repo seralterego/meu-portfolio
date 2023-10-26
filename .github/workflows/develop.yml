@@ -1,6 +1,6 @@
 on:
   push:
-    branchs: ["develop"]
+    branches: ["develop"]
 
 name: 🚀 Deploy website on push to develop
 jobs:

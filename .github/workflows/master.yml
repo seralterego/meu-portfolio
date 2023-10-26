@@ -1,6 +1,6 @@
 on:
   push:
-    branchs: ["master"]
+    branches: ["master"]
 
 name: 🚀 Deploy website on push to master
 jobs:
