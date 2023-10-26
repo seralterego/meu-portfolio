@@ -17,4 +17,4 @@ jobs:
           server: ${{ secrets.ftp_host_dev }}
           username: ${{ secrets.ftp_user_dev }}
           password: ${{ secrets.ftp_password_dev }}
-          server-dir: /home3/serg9198/public_html/dev/
+          server-dir: /public_html/dev/
