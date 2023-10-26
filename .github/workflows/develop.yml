@@ -1,8 +1,8 @@
 on:
   push:
-    branchs:
-      - develop
-name: 🚀 Deploy website on push
+    branchs: ["develop"]
+
+name: 🚀 Deploy website on push to develop
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -17,4 +17,4 @@ jobs:
           server: ${{ secrets.ftp_host_dev }}
           username: ${{ secrets.ftp_user_dev }}
           password: ${{ secrets.ftp_password_dev }}
-          server-dir: /public_html/dev
+          server-dir: /public_html/dev/
