@@ -2,21 +2,17 @@ RewriteOptions inherit
 
 RewriteEngine On
 
-# Redirect temporário
-#Redirect 302 /https://sergioleitao.com.br https://sergioleitao.com.br/pages/em-breve.html
-#RewriteRule ^https://sergioleitao.com.br/index.html https://sergioleitao.com.br/pages/em-breve.html [R=302, L]
-
 Order deny,allow
 Allow from all
 Deny from 192.168.1.5
 Deny from 192.168.1.25
 
-RewriteCond %{SERVER_PORT} 80
-RewriteCond %{HTTP_HOST} sergioleitao\.com\.br [NC]
+# Redirect temporário
 RewriteCond %{HTTP_HOST} ^sergioleitao\.com\.br$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.sergioleitao\.com\.br$
-RewriteRule ^(.*)$ https://sergioleitao.com.br/$1 [R,L]
+RewriteRule ^/?$ "https\:\/\/sergioleitao\.com\.br\/pages\/em\-breve\.html" [R=302,L]
 
-RewriteCond %{HTTP_HOST} ^sergioleitao.com.br/dev/$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.sergioleitao.com.br/dev/$
-RewriteRule ^(.*)$ https://dev.sergioleitao.com.br/$1 [L,R=301]
+#RewriteCond %{HTTP_HOST} ^sergioleitao.com.br/dev/$ [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.sergioleitao.com.br/dev/$
+#RewriteRule ^(.*)$ https://dev.sergioleitao.com.br/$1 [L,R=301]
+
