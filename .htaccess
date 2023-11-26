@@ -4,7 +4,7 @@ RewriteEngine On
 
 # Redirect temporário
 #Redirect 302 /https://sergioleitao.com.br https://sergioleitao.com.br/pages/em-breve.html
-RewriteRule ^https://sergioleitao.com.br/index.html https://sergioleitao.com.br/pages/em-breve.html [R=302, L]
+#RewriteRule ^https://sergioleitao.com.br/index.html https://sergioleitao.com.br/pages/em-breve.html [R=302, L]
 
 Order deny,allow
 Allow from all
