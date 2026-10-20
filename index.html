@@ -18,7 +18,6 @@
 </head>
 
 <body>
-  <!-- header design -->
   <header class="header">
     <a href="#" class="logo">Sérgio Leitão</a>
     <i class="bx bx-menu" id="menu-icon"></i>
@@ -61,14 +60,14 @@
         Vamos juntos?
       </p>
       <div class="social-media">
-        <a href="https://github.com/seralterego" title="Link Rede Social" target="_blank"><i
+        <a href="https://github.com/seralterego" title="GitHub" target="_blank"><i
             class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/sergiomirandaleitao/" title="Link Rede Social" target="_blank"><i
+        <a href="https://www.linkedin.com/in/sergiomirandaleitao/" title="LinkedIn" target="_blank"><i
             class="bx bxl-linkedin"></i></a>
-        <a href="https://bit.ly/whatsappsergioleitao" title="Link Rede Social" target="_blank"><i
+        <a href="https://bit.ly/whatsappsergioleitao" title="WhatsApp" target="_blank"><i
             class='bx bxl-whatsapp'></i></a>
       </div>
-      <a href="./assets/docs/CV_SergioMirandaLeitao.pdf" class="btn" target="_blank" download><i
+      <a href="./assets/docs/CV_Sergio_Miranda_Leitao_2026" class="btn" target="_blank" download><i
           class='bx bx-download'></i>&nbsp;&nbsp;&nbsp;
         Baixe meu CV
         &nbsp;&nbsp;&nbsp;</a>
@@ -79,7 +78,6 @@
     </div>
   </section>
 
-  <!-- about section design -->
   <section class="about" id="sobre">
     <div class="about-img">
       <img src="./assets/images/perfil/foto_perfil_sobre.png" alt="Olá, meu nome é Sérgio!" />
@@ -159,7 +157,6 @@
     </div>
   </section>
 
-  <!-- portfolio section design -->
   <section class="portfolio" id="portfolio">
     <h2 class="heading">Últimos <span>Projetos</span></h2>
     <h3>
@@ -260,11 +257,10 @@
     </div>
   </section>
 
-  <!-- contact section design -->
   <section class="contact" id="contato">
     <h2 class="heading">Entre em <span>Contato!</span></h2>
 
-    <form action="#">
+    <!-- <form action="#">
       <div class="input-box">
         <input type="text" name="" id="" placeholder="Nome Completo" />
         <input type="email" name="" id="" placeholder="E-mail" />
@@ -275,14 +271,28 @@
       </div>
       <textarea name="" id="" cols="30" rows="10" placeholder="Escreva aqui sua mensagem"></textarea>
       <input type="submit" value="Enviar Mensagem" class="btn" />
-    </form>
+    </form> -->
+
+    <div class="temp-div" style="display: flex; flex-flow: column wrap; justify-content: center; align-items: center; margin-bottom: 4rem;">
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/sergiomirandaleitao/" title="LinkedIn" target="_blank"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://bit.ly/whatsappsergioleitao" title="WhatsApp" target="_blank"><i
+            class='bx bxl-whatsapp'></i></a>
+      </div>
+      <div>
+        <a href="mailto:contato@sergioleitao.com.br" class="btn" target="_blank"><i
+            class='bx bx-envelope'></i>&nbsp;&nbsp;&nbsp;
+          Email
+          &nbsp;&nbsp;&nbsp;</a>
+      </div>
+    </div>
   </section>
 
-  <!-- footer design -->
   <footer class="footer">
     <div class="footer-text">
       <p>
-        Copyright &copy; 2023 por Sérgio Leitão | Todos os direitos
+        Copyright &copy; <span id="anoAtual"></span> por Sérgio Leitão | Todos os direitos
         reservados.
       </p>
     </div>
@@ -299,16 +309,14 @@
     </div>
   </footer>
 
-  <!-- scrool reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- typed js -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <!-- custom js -->
   <script src="./js/script.js"></script>
   <script src="./js/script-typed.js"></script>
   <script src="./js/script-scroll-reveal.js"></script>
   <script src="./js/pop-up-at-loading.js"></script>
   <script src="./js/pop-up-read-more.js"></script>
+  <script src="./js/update-site-year.js"></script>
   <script src="./js/update-dev-years.js"></script>
 </body>
 

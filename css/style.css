@@ -29,7 +29,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  min-height: auto;
   padding: 10rem 9% 2rem;
 }
 /* ------------------------------------------------------------------- */
@@ -153,7 +153,7 @@ section {
 .home-img img {
   width: 40vw;
   animation: floatImage 4s ease-in-out infinite;
-  margin: 0 0 5rem 3rem
+  margin: -8rem 0 5rem 3rem
 }
 @keyframes floatImage {
   0% {
@@ -183,7 +183,7 @@ span {
 }
 .home-content p {
   font-size: 1.6rem;
-  padding-right: 2rem;
+  padding-right: 22rem;
 }
 .home-content p span {
   color: var(--text-color);
@@ -372,6 +372,8 @@ span {
   box-shadow: 0 0 1rem var(--main-color);
   overflow: hidden;
   display: flex;
+  width: 100%;
+  max-width: 380px;
 }
 .portfolio-box img {
   width: 100%;
@@ -475,6 +477,11 @@ span {
 }
 .footer-text p {
   font-size: 1.6rem;
+}
+.footer-text p span {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  font-weight: 600;
 }
 .footer .footer-link {
   color: var(--main-color);
